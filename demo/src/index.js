@@ -6,8 +6,14 @@ import Example from '../../src'
 class Demo extends Component {
   render() {
     return <div>
-      <h1>reveal-image Demo</h1>
-      <Example/>
+      <h1>React Reveal Image</h1>
+      <Example 
+        src="https://via.placeholder.com/400"
+        style={{
+          padding: '1rem',
+          maxWidth: '500px',
+        }}
+      />
     </div>
   }
 }
