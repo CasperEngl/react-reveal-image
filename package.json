@@ -34,17 +34,17 @@
     "react-dom": "^16.8.3"
   },
   "author": "Casper Engelmann",
-  "homepage": "https://github.com/CasperEngl/react-reveal-title",
+  "homepage": "https://github.com/CasperEngl/react-reveal-image",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CasperEngl/react-reveal-title.git"
+    "url": "git+https://github.com/CasperEngl/react-reveal-image.git"
   },
   "keywords": [
     "react-component"
   ],
   "bugs": {
-    "url": "https://github.com/CasperEngl/react-reveal-title/issues"
+    "url": "https://github.com/CasperEngl/react-reveal-image/issues"
   },
   "directories": {
     "lib": "lib",
