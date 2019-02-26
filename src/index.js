@@ -30,37 +30,39 @@ const RevealImage = ({
   const container = React.useRef(null);
   const image = React.useRef(null);
 
-  const imageTimeline = new TimelineMax({
-    delay: 0.5,
-    paused: true,
-  });
-
-  const controller = new ScrollMagic.Controller();
-
-  const onEnter = () => {
-    imageTimeline.play();
-  };
-
-  useEffect(() => {
-    new ScrollMagic.Scene({
-      triggerHook: 'onEnter',
-      triggerElement: container.current,
-      offset: 100,
-      duration: '100%',
-    })
-      .on('enter', onEnter)
-      .addTo(controller);
-
-    imageTimeline
-      .to(container.current, 1, {
-        delay,
-        scaleY: 1,
-        ease: Expo.easeOut,
+  if (typeof window !== 'undefined') {
+    const imageTimeline = new TimelineMax({
+      delay: 0.5,
+      paused: true,
+    });
+  
+    const controller = new ScrollMagic.Controller();
+  
+    const onEnter = () => {
+      imageTimeline.play();
+    };
+  
+    useEffect(() => {
+      new ScrollMagic.Scene({
+        triggerHook: 'onEnter',
+        triggerElement: container.current,
+        offset: 100,
+        duration: '100%',
       })
-      .to(image.current, 0.5, {
-        opacity: 1,
-      });
-  }, []);
+        .on('enter', onEnter)
+        .addTo(controller);
+  
+      imageTimeline
+        .to(container.current, 1, {
+          delay,
+          scaleY: 1,
+          ease: Expo.easeOut,
+        })
+        .to(image.current, 0.5, {
+          opacity: 1,
+        });
+    }, []);
+  }
 
   return (
     <ImageContainer
