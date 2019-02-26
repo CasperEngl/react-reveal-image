@@ -6,6 +6,10 @@
 
 React Reveal Image will only ever reveal itself when it's in the viewport.
 
+## Demo
+
+[Link](https://casperengelmann.com/react-reveal-title)
+
 ## Usage
 
 ```
