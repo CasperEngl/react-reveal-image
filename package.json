@@ -1,5 +1,5 @@
 {
-  "name": "react-reveal-image",
+  "name": "@casperengl/react-reveal-image",
   "version": "1.0.0",
   "description": "React Reveal Image",
   "main": "lib/index.js",
@@ -38,9 +38,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CasperEngl/react-reveal-title"
+    "url": "git+https://github.com/CasperEngl/react-reveal-title.git"
   },
   "keywords": [
     "react-component"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/CasperEngl/react-reveal-title/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
 }
