@@ -1,10 +1,26 @@
-# reveal-image
+# React Reveal Image
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe reveal-image here.
+React Reveal Image will only ever reveal itself when it's in the viewport.
+
+## Usage
+
+```
+import RevealImage from 'react-reveal-image';
+
+export default () => (
+  <RevealImage
+    src="https://via.placeholder.com/400" // Link to an image
+    as="article" // Default: figure - change the container element
+    delay={2} // Delay in seconds
+    className="extra class names" // Will add any classes here to the image container
+  />
+)
+```
+
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
