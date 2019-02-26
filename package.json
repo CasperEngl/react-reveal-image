@@ -1,5 +1,5 @@
 {
-  "name": "reveal-image",
+  "name": "react-reveal-image",
   "version": "1.0.0",
   "description": "React Reveal Image",
   "main": "lib/index.js",
