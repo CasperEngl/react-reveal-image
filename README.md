@@ -9,7 +9,7 @@ React Reveal Image will only ever reveal itself when it's in the viewport.
 ## Usage
 
 ```
-import RevealImage from 'react-reveal-image';
+import RevealImage from '@casperengl/react-reveal-image';
 
 export default () => (
   <RevealImage
